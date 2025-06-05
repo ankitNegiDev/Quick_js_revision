@@ -14,13 +14,40 @@ deploymentTarget = "autoscale"
 ignorePorts = false
 
 [workflows]
-runButton = "Run Basic JS"
+runButton = "array"
 
 [[workflows.workflow]]
-name = "Run Basic JS"
+name = "loop"
 author = 23902305
 mode = "sequential"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
 args = "node Basic_js/loops.js"
+
+[[workflows.workflow]]
+name = "string"
+mode = "sequential"
+author = 23902305
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "node Basic_js/string.js"
+
+[[workflows.workflow]]
+name = "function"
+mode = "sequential"
+author = 23902305
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "node Basic_js/function.js"
+
+[[workflows.workflow]]
+name = "array"
+mode = "sequential"
+author = 23902305
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "node Basic_js/array.js"
