@@ -39,7 +39,7 @@ let $_so="ii"; // valid
 
 // Data types -- primitive  and non-primitev
 
-// number
+// number -- we can store number +ve , -ve ,0,-0 , and NaN, point number
 let age=23;
 console.log("age is : ",age);
 
@@ -61,7 +61,52 @@ console.log("mars is : ",mars);
 
 // symbol
 
+
 // bigint -- n at the last of value.
+/**
+ * this data type represent the higher value --- in js if any num ends with n then it is bigint like val=4555n;
+ * to compute bigint js puts extra efforts so using multiple bigint will lead to slowing our application..
+ */
+let largeNum=34n;
+console.log("large num is : ",largeNum);
 
 
 
+// null , undefined
+/**
+ * undefined means that does not exist.. means a varaible that is declared but never defined..
+ * null means varaible is declared and defined but with null explictely or with an empty value..
+ * eg -> if there is a bottle and there is no water in bottle that means it is null (water bottle is empty) but if bootle does not exist that means it is undefined means water bottle does not exist at all..
+ */
+
+// primitive ----
+
+// (1) object 
+
+/**
+ * object is a data structyure in the js in which we store data in the key-value parits form
+ * key is always in the string format either we write it in string format or not js will internally convert key into the string..
+ * a key-value pair will be seprated by a , comma.
+ * inside a object we can store any type of data like number,string,boolean,array,object,function and so on..
+ * but we can't store object inside anther object directly but we can store object inside another object using key-value pair..
+ * we can store function inside the object and that function is now called as method for that object.
+ * plse avoid the reserverd word as a key name in the object.. like function , object, array, string and so on. it will work but it is not a good practice..
+ * if two keys are same then the last key will be considered..
+ */
+
+let myObj={
+  "firstName":"bingo",
+  // firstName:"love", // this will overwrite the firstName key value..
+  "lastName":"live",
+  age:23,
+  greet:function welcome(name){
+    console.log("hello ",name);
+  },
+  student:{
+    studentName:"anku",
+    studentAge:23
+  },
+  country:["seattle","vladivostok","moscow"],
+  array:[1,2,3,4,5,6,7,8,9,10], // not a good pratics to us key name as array.
+};
+ console.log("my obj is : ", myObj);
