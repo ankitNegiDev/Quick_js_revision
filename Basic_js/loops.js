@@ -62,7 +62,7 @@ arr.forEach(function callback(currentElement,index,arr){
 // })
 
 
-// break in loop...
+// break in loop... break will terminate the nearest loop. hwen it is hit
 
 // let random=Math.floor(Math.random()* (max-min+1))+min;
 let random=Math.floor(Math.random()* (25-20+1))+20;
@@ -75,6 +75,25 @@ for(let i=0; i<10; i++){
   }else{
     console.log(`i is : ${i} and random is : ${random}`);
   }
+}
+
+// continue... in loop
+
+for(let i=1; i<10; i++){
+  if(i%5===0){
+    console.log("i in if condition is : ",i);
+    continue;
+  }
+  console.log("i is : ",i);
+}
+i=1;
+while(i<10){
+  if(i%4===0){
+    i++; // if not then it become infinit loop because when i%4===0 is true then continue will move conteol to start of loop so again loop will run i%4===0 since there is no change in i so it will again an agian like 4%4===0 so it is always true.. that's wny i++ is mandatory here.
+    continue;
+  }
+  console.log("i in while is : ",i);
+  i++;
 }
 
 // uanary operator ... 
