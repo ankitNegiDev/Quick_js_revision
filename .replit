@@ -14,7 +14,7 @@ deploymentTarget = "autoscale"
 ignorePorts = false
 
 [workflows]
-runButton = "array"
+runButton = "Scopes in js"
 
 [[workflows.workflow]]
 name = "loop"
@@ -51,3 +51,12 @@ author = 23902305
 [[workflows.workflow.tasks]]
 task = "shell.exec"
 args = "node Basic_js/array.js"
+
+[[workflows.workflow]]
+name = "Scopes in js"
+mode = "sequential"
+author = 23902305
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "node Intermediate_js/scopes.js"
