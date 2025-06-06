@@ -14,7 +14,7 @@ deploymentTarget = "autoscale"
 ignorePorts = false
 
 [workflows]
-runButton = "Scopes in js"
+runButton = "function expression"
 
 [[workflows.workflow]]
 name = "loop"
@@ -60,3 +60,12 @@ author = 23902305
 [[workflows.workflow.tasks]]
 task = "shell.exec"
 args = "node Intermediate_js/scopes.js"
+
+[[workflows.workflow]]
+name = "function expression"
+mode = "sequential"
+author = 23902305
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "node Intermediate_js/functionExpression.js"
