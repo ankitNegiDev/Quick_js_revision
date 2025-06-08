@@ -14,7 +14,7 @@ deploymentTarget = "autoscale"
 ignorePorts = false
 
 [workflows]
-runButton = "function expression"
+runButton = "prototypes"
 
 [[workflows.workflow]]
 name = "loop"
@@ -69,3 +69,66 @@ author = 23902305
 [[workflows.workflow.tasks]]
 task = "shell.exec"
 args = "node Intermediate_js/functionExpression.js"
+
+[[workflows.workflow]]
+name = "object"
+mode = "sequential"
+author = 23902305
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "node Intermediate_js/object.js"
+
+[[workflows.workflow]]
+name = "oops"
+mode = "sequential"
+author = 23902305
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "node Intermediate_js/oops.js"
+
+[[workflows.workflow]]
+name = "ways to initialize data member"
+mode = "sequential"
+author = 23902305
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "node Intermediate_js/waysToInitializeDataMember.js"
+
+[[workflows.workflow]]
+name = "problem in current class"
+mode = "sequential"
+author = 23902305
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "node Intermediate_js/problemInCurrentClass.js"
+
+[[workflows.workflow]]
+name = "builder"
+mode = "sequential"
+author = 23902305
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "node Intermediate_js/builder.js"
+
+[[workflows.workflow]]
+name = "object destructuring"
+mode = "sequential"
+author = 23902305
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "node Intermediate_js/objectDestructuring.js"
+
+[[workflows.workflow]]
+name = "prototypes"
+mode = "sequential"
+author = 23902305
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "node Intermediate_js/prototypes.js"
