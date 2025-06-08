@@ -14,7 +14,7 @@ deploymentTarget = "autoscale"
 ignorePorts = false
 
 [workflows]
-runButton = "prototypes"
+runButton = "callbacks"
 
 [[workflows.workflow]]
 name = "loop"
@@ -132,3 +132,21 @@ author = 23902305
 [[workflows.workflow.tasks]]
 task = "shell.exec"
 args = "node Intermediate_js/prototypes.js"
+
+[[workflows.workflow]]
+name = "coercion"
+mode = "sequential"
+author = 23902305
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "node Advance_js/coercion.js"
+
+[[workflows.workflow]]
+name = "callbacks"
+mode = "sequential"
+author = 23902305
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "node Advance_js/callbacks.js"
